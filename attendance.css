@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	background-color: #f0f0f0; /* Update background color */
+  }
+  
+  /* Container styling */
+  .container {
+	width: 100%;
+	max-width: 500px; /* Set maximum width for better responsiveness */
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: #005b2f;
+	color: white; /* Set text color for the container */
+  }
+  
+  /* Headings within container */
+  .container h4 {
+	margin-bottom: 10px;
+	font-size: 15px;
+  }
+  
+  /* Input and select styling */
+  .container input,
+  .container select,
+  .container textarea,
+  .container #enter,
+  .container #leaving {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd; /* Add a subtle border */
+	border-radius: 5px;
+	background-color: #fff; /* Set background color for better visibility */
+	color: #333; /* Set text color */
+  }
+  
+  /* Section styling */
+  .container section {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  /* Button styling */
+  #submit {
+	border: none;
+	background-color: orangered;
+	color: white;
+	width: 100%; /* Full-width button */
+	padding: 10px; /* Add padding for better appearance */
+	margin-top: 10px;
+	border-radius: 5px;
+	cursor: pointer; /* Add pointer cursor on hover */
+  }
+  
+  /* Button hover effect */
+  #submit:hover {
+	background-color: #333333;
+  }
+  
+  /* Media Query for smaller screens */
+  @media only screen and (max-width: 600px) {
+	.container {
+	  max-width: 100%; /* Adjust container width for smaller screens */
+	}
+  }
+  
