@@ -12,18 +12,66 @@
 	justify-content: center;
 	font-family: 'Poppins', sans-serif;
 	font-size: 18px;
-	background-color: #f0f0f0; /* Update background color */
+	background-image: url("bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;/* Update background color */
+  }
+  
+  /* Left and right images */
+  .left-image
+   {
+	position: absolute;
+	top:0 ;
+	height: 100px;
+	width: 220px; /* Adjust the width as needed */
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .left-image {
+	left: 0;
+	background-image: url("REVA\ logo-169_40px.png");
+  }
+  
+  .right-image {
+	
+    right: 0;
+    background-image: url(FACE\ LOGO\ PNG.png);
+    position: absolute;
+    top: 0;
+    height: 93px;
+    width: 239px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: blanchedalmond;
+	animation: fadeIn 2s ease-in-out forwards;
   }
   
   /* Container styling */
   .container {
 	width: 100%;
-	max-width: 500px; /* Set maximum width for better responsiveness */
+	max-width: 500px;
 	padding: 30px;
+	margin: 0 auto;
 	border: 1px solid #eeeeee;
-	border-radius: 10px;
-	background-color: #005b2f;
-	color: white; /* Set text color for the container */
+	border-radius: 15px;
+	background-color: #73f5f27a;
+	color: white;
+	opacity: 0; /* Set initial opacity to 0 for the fade-in effect */
+	animation: fadeIn 1s ease-in-out forwards; /* Animation properties */
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
   }
   
   /* Headings within container */
@@ -41,10 +89,10 @@
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 10px;
-	border: 1px solid #ddd; /* Add a subtle border */
+	border: 1px solid #ddd;
 	border-radius: 5px;
-	background-color: #fff; /* Set background color for better visibility */
-	color: #333; /* Set text color */
+	background-color: #fff;
+	color: #333;
   }
   
   /* Section styling */
@@ -58,11 +106,11 @@
 	border: none;
 	background-color: orangered;
 	color: white;
-	width: 100%; /* Full-width button */
-	padding: 10px; /* Add padding for better appearance */
+	width: 100%;
+	padding: 10px;
 	margin-top: 10px;
 	border-radius: 5px;
-	cursor: pointer; /* Add pointer cursor on hover */
+	cursor: pointer;
   }
   
   /* Button hover effect */
@@ -73,7 +121,7 @@
   /* Media Query for smaller screens */
   @media only screen and (max-width: 600px) {
 	.container {
-	  max-width: 100%; /* Adjust container width for smaller screens */
+	  max-width: 100%;
 	}
   }
   
