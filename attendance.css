@@ -121,7 +121,7 @@
   /* Media Query for smaller screens */
   @media only screen and (max-width: 600px) {
 	.container {
-	  max-width: 100%;
+	  max-width: auto;
 	}
   }
   
